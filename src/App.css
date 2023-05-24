@@ -1,38 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400&display=swap');
+
+
 .App {
-  text-align: center;
+  padding: 50px 0 50px 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.white-box {
+  background: #fffaf0;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0.5px 1.5px 2px 0.5px rgba(0,0,0,.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.right-profile {
+  border-left : 1px solid black;
+}
+
+.line {
+  padding-top: 50px;
+  border-bottom: 1px solid lightgray;
+  border-bottom-width: medium;
+}
+
+
+.blue-border {
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.6);
+  border-bottom-width: medium;
+  top: -3px;
+  width: 100px;
+}
+
+.about-box {
+  border-bottom : 1px solid black;
+}
+
+.about-des {
+  margin: 30px 0 120px 0;
+}
+
+.pill {
+  display: inline-block;
+	border: 1px solid lightgray;
+	border-radius: 100px;
+	padding: 3px 12px 5px 12px;
+	margin-right: 5px;
+	margin-bottom: 70px;
+}
+
+.know-box {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.know-under {
+  padding-top: 50px;
+  border-bottom: 1px solid gray;
+  border-bottom-width: medium;
+  position: relative;
+  top: -50px;
+}
+
+@media screen and (max-width : 960px) {
+  .right-profile{
+    border: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} 
